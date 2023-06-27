@@ -60,7 +60,7 @@ export async function getSettings(store: StoreProvider): Promise<Settings> {
     return settings;
 }
 
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
 
 export default api()
     .use(useAuth)

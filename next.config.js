@@ -11,5 +11,9 @@ const withPWA = nextPWA({
 });
 
 module.exports = withPWA({
+    experimental: {
+        runtime: 'experimental-edge',
+    },
+    reactStrictMode: true,
     swcMinify: true
 });

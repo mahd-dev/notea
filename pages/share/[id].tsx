@@ -7,6 +7,8 @@ import { ServerProps, ssr, SSRContext } from 'libs/server/connect';
 import { useSession } from 'libs/server/middlewares/session';
 import { applyReset } from 'libs/server/middlewares/reset';
 
+export const runtime = 'experimental-edge';
+
 export default function SharePage({
     tree,
     note,

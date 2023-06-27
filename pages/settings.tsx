@@ -14,6 +14,8 @@ import { applyReset } from 'libs/server/middlewares/reset';
 import { applyMisconfiguration } from 'libs/server/middlewares/misconfiguration';
 import { DebugInformation } from 'libs/shared/debugging';
 
+export const runtime = 'experimental-edge';
+
 const SettingsPage: NextPage<{ debugInformation: DebugInformation, tree: TreeModel }> = ({ tree, debugInformation }) => {
     const { t } = useI18n();
 

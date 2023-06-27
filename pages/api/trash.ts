@@ -6,7 +6,7 @@ import { getPathNoteById } from 'libs/server/note-path';
 import { NOTE_DELETED } from 'libs/shared/meta';
 import { ROOT_ID } from 'libs/shared/tree';
 
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
 
 export default api()
     .use(useAuth)

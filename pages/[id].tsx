@@ -12,6 +12,8 @@ import { applyUA } from 'libs/server/middlewares/ua';
 import { isNoteLink } from 'libs/shared/note';
 import { applyReset } from 'libs/server/middlewares/reset';
 
+export const runtime = 'experimental-edge';
+
 export default function EditNotePage({
     tree,
     note,

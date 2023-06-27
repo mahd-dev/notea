@@ -7,6 +7,8 @@ import router from 'next/router';
 import { FormEvent, useCallback, useEffect } from 'react';
 import { useToast } from 'libs/web/hooks/use-toast';
 
+export const runtime = 'experimental-edge';
+
 const LoginPage = () => {
     const { request, error, loading } = useFetcher();
     const toast = useToast();
