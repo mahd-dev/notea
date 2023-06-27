@@ -28,6 +28,8 @@ export async function getNote(
     } as NoteModel;
 }
 
+export const runtime = 'edge';
+
 export default api()
     .use(useAuth)
     .use(useStore)

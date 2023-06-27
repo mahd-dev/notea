@@ -3,6 +3,8 @@ import { useAuth } from 'libs/server/middlewares/auth';
 import { useStore } from 'libs/server/middlewares/store';
 import { createNote } from 'libs/server/note';
 
+export const runtime = 'edge';
+
 export default api()
     .use(useAuth)
     .use(useStore)

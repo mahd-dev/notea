@@ -5,6 +5,8 @@ import { useStore } from 'libs/server/middlewares/store';
 import { getPathNoteById } from 'libs/server/note-path';
 import { NOTE_DELETED } from 'libs/shared/meta';
 
+export const runtime = 'edge';
+
 export default api()
     .use(useAuth)
     .use(useStore)

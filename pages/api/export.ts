@@ -16,6 +16,8 @@ export function escapeFileName(name: string): string {
     return name.replace(/[#%&{}\\<>*?/$!'":@+`|=]/g, "_");
 }
 
+export const runtime = 'edge';
+
 export default api()
     .use(useAuth)
     .use(useStore)

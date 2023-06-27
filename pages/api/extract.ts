@@ -4,6 +4,8 @@ import { unfurl } from 'unfurl.js';
 
 const expires = 86400;
 
+export const runtime = 'edge';
+
 export default api()
     .use(useReferrer)
     .get(async (req, res) => {
