@@ -1,7 +1,7 @@
 import { api } from 'libs/server/connect';
 import { useAuth } from 'libs/server/middlewares/auth';
 
-export const runtime = 'experimental-edge';
+export const runtime = 'edge';
 
 export default api()
     .use(useAuth)

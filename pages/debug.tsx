@@ -7,7 +7,7 @@ import { DebugInformation, IssueSeverity } from 'libs/shared/debugging';
 import { Logs } from 'components/debug/logs';
 import * as env from 'libs/shared/env';
 
-export const runtime = 'experimental-edge';
+export const runtime = 'edge';
 
 export function DebugPage({ debugInformation }: ServerProps) {
     if (!debugInformation) throw new Error('Missing debug information');

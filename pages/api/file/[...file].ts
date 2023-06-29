@@ -7,7 +7,7 @@ import { config } from 'libs/server/config';
 // On aliyun `X-Amz-Expires` must be less than 604800 seconds
 const expires = 86400;
 
-export const runtime = 'experimental-edge';
+export const runtime = 'edge';
 
 export default api()
     .use(useStore)

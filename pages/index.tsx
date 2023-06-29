@@ -13,7 +13,7 @@ import { applyCsrf } from 'libs/server/middlewares/csrf';
 import { SSRContext, ssr } from 'libs/server/connect';
 import { applyReset } from 'libs/server/middlewares/reset';
 
-export const runtime = 'experimental-edge';
+export const runtime = 'edge';
 
 const EditNotePage: NextPage<{ tree: TreeModel }> = ({ tree }) => {
     const { ua } = UIState.useContainer();

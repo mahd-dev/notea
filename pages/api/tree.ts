@@ -3,7 +3,7 @@ import { useAuth } from 'libs/server/middlewares/auth';
 import { useStore } from 'libs/server/middlewares/store';
 import TreeActions from 'libs/shared/tree';
 
-export const runtime = 'experimental-edge';
+export const runtime = 'edge';
 
 export default api()
     .use(useAuth)
